@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends
 
 router = APIRouter(
     prefix= "/restaurant",
-    tags= ["Admin"],
+    tags= ["Restaurant"],
     # dependencies= [Depends()],
     responses= {404: {"description" : "Not found"}}
 )

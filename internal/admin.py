@@ -8,10 +8,10 @@ router = APIRouter(
 )
 
 
-@router.get("/admin/restaurants/")
+@router.get("/restaurants/")
 async def get_all_restaurants():
     return []
 
-@router.post("/admin/restaurants/")
+@router.post("/restaurants/")
 async def create_restaurant():
     return {"message": "New restaurant created"}

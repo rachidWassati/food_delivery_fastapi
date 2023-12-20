@@ -2,3 +2,5 @@ sqlalchemy
 fastapi
 uvicorn
 pydantic
+pymongo[srv]
+python-dotenv
