@@ -8,8 +8,9 @@ sqlalchemy = "*"
 fastapi = "*"
 uvicorn = "*"
 pydantic = "*"
-pymongo = {extras = ["srv"], version = "*"}
 python-dotenv = "*"
+pymongo = {extras = ["srv"], version = "*"}
+mongoengine = "*"
 
 [dev-packages]
 
