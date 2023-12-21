@@ -26,8 +26,8 @@ async def create_restaurant(restaurant: RestaurantCreate):
         new_restaurant = Restaurant(**restaurant.dict())
         # on ecrase la valeur de `password` avec son hashage
         new_restaurant.password = Hasher.get_password_hash(restaurant.password)
-        new_restaurant.save()
+        restaurant_created = new_restaurant.save()
         
-        return JSONResponse(new_restaurant.to_json())
+        return {"status": "success", "restaurant": restaurant_created.to_dict()}
     except mongoengine.errors.NotUniqueError:
         return HTTPException(409, detail= f"Restaurant already registered with email: {restaurant.email}")

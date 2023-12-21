@@ -12,8 +12,12 @@ python-dotenv = "*"
 mongoengine = "*"
 motor = "*"
 passlib = "*"
-pymongo = {extras = ["srv"], version = "*"}
 bcrypt = "*"
+pytest = "*"
+httpx = "*"
+pymongo = {extras = ["srv"], version = "*"}
+python-multipart = "*"
+python-jose = {extras = ["cryptography"], version = "*"}
 
 [dev-packages]
 

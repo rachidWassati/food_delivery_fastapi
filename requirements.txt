@@ -6,3 +6,7 @@ python-dotenv
 mongoengine
 passlib
 bcrypt
+pytest
+httpx
+python-multipart
+python-jose[cryptography]
