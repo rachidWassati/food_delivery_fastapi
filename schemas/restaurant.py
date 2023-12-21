@@ -1,4 +1,4 @@
-from typing import List
+from typing import List, Optional
 from pydantic import BaseModel
 
 
@@ -24,7 +24,7 @@ class RestaurantCreate(BaseModel):
     phone: str
     email: str
     password: str
-    coverImages: List[str]
+    coverImages: Optional[List[str]] = None
 
 class RestaurantUpdate(BaseModel):
     name: str

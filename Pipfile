@@ -9,8 +9,11 @@ fastapi = "*"
 uvicorn = "*"
 pydantic = "*"
 python-dotenv = "*"
-pymongo = {extras = ["srv"], version = "*"}
 mongoengine = "*"
+motor = "*"
+passlib = "*"
+pymongo = {extras = ["srv"], version = "*"}
+bcrypt = "*"
 
 [dev-packages]
 
