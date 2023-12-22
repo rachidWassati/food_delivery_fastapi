@@ -15,9 +15,10 @@ passlib = "*"
 bcrypt = "*"
 pytest = "*"
 httpx = "*"
-pymongo = {extras = ["srv"], version = "*"}
 python-multipart = "*"
+pymongo = {extras = ["srv"], version = "*"}
 python-jose = {extras = ["cryptography"], version = "*"}
+pyjwt = "*"
 
 [dev-packages]
 

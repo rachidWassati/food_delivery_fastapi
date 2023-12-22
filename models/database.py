@@ -2,8 +2,6 @@ from dotenv import load_dotenv
 from os import getenv
 from mongoengine import connect, disconnect
 
-from models.restaurant import Restaurant
-
 load_dotenv()
 
 def get_db_connection():

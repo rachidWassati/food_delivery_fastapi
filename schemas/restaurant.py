@@ -35,3 +35,14 @@ class RestaurantUpdate(BaseModel):
     phone: str
     password: str
     coverImages: List[str]
+
+class RestaurantResponse(BaseModel):
+    name: str
+    ownerName: str
+    foodTypes: List[str]
+    postalcode: str
+    address: str
+    phone: str
+    serviceAvailable: bool
+    coverImages: List[str]
+    rating: float
